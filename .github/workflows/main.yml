@@ -60,13 +60,13 @@ jobs:
 
       - name: Build Image
 
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/hello-java-app:latest .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/hello:latest .
 
  
 
       - name: Push Image
 
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/hello-java-app:latest
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/hello:latest
 
 
 
